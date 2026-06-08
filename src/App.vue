@@ -1,52 +1,52 @@
 <script setup>
-  import { ref, onMounted, onUnmounted } from 'vue'
+  import { ref, onMounted, onUnmounted } from 'vue';
   // import Responsive from '@/components/responsive.vue'
 
-  const anio = ref(new Date().getFullYear())
-  const showScrollTopButton = ref(false)
-  const activeSection = ref(null)
-  const sectionIds = ['section1', 'section2', 'section3', 'section4', 'section5', 'section6']
+  const anio = ref(new Date().getFullYear());
+  const showScrollTopButton = ref(false);
+  const activeSection = ref(null);
+  const sectionIds = ['section1', 'section2', 'section3', 'section4', 'section5', 'section6'];
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: 'smooth' })
-  }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
 
   const handleScroll = () => {
-    const scrollTop = window.scrollY
-    showScrollTopButton.value = scrollTop > 0
+    const scrollTop = window.scrollY;
+    showScrollTopButton.value = scrollTop > 0;
 
     // Detectar sección activa
     for (const id of sectionIds) {
-      const el = document.getElementById(id)
+      const el = document.getElementById(id);
       if (el) {
-        const rect = el.getBoundingClientRect()
+        const rect = el.getBoundingClientRect();
         if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
-          activeSection.value = id
-          break
+          activeSection.value = id;
+          break;
         }
       }
     }
-  }
+  };
 
   const cerrarMenu = () => {
-    const checkbox = document.getElementById('menu')
-    if (checkbox) checkbox.checked = false
-  }
+    const checkbox = document.getElementById('menu');
+    if (checkbox) checkbox.checked = false;
+  };
 
   onMounted(() => {
-    window.addEventListener('scroll', handleScroll)
-  })
+    window.addEventListener('scroll', handleScroll);
+  });
 
   onUnmounted(() => {
-    window.removeEventListener('scroll', handleScroll)
-  })
+    window.removeEventListener('scroll', handleScroll);
+  });
 
   const scrollToSection = index => {
-    const element = document.getElementById(`section${index}`)
+    const element = document.getElementById(`section${index}`);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' })
+      element.scrollIntoView({ behavior: 'smooth' });
     }
-  }
+  };
 </script>
 
 <template>
@@ -55,7 +55,7 @@
     <div class="fixed z-30 w-full nav-menu bg-white bg-opacity-15">
       <nav class="container h-30 flex items-center justify-between px-5 py-3 relative text-white">
         <a href="./" class="w-1/3 max-w-[126px]">
-          <img src="@/assets/img/logo-convension.svg" alt="Logo convension" class="w-full" width="127" height="32" loading="lazy" />
+          <img src="@/assets/img/logo-convension.svg" alt="Logo" class="w-full" width="127" height="32" loading="lazy" />
         </a>
         <div class="flex items-center justify-end gap-2 text-[14px]">
           <input type="checkbox" id="menu" class="peer hidden" />
@@ -72,7 +72,7 @@
                   class="py-2 px-2 rounded-full hover:bg-white hover:text-black hover:py-1 hover:px-2"
                   @click="
                     scrollToSection(1);
-                    cerrarMenu()
+                    cerrarMenu();
                   ">
                   AMS
                 </a>
@@ -83,7 +83,7 @@
                   :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section2' ? 'bg-white text-[#3a3a82]' : '']"
                   @click="
                     scrollToSection(2);
-                    cerrarMenu()
+                    cerrarMenu();
                   ">
                   Patrocinadores
                 </a>
@@ -94,7 +94,7 @@
                   :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section3' ? 'bg-white text-[#3a3a82]' : '']"
                   @click="
                     scrollToSection(3);
-                    cerrarMenu()
+                    cerrarMenu();
                   ">
                   Ponentes
                 </a>
@@ -105,7 +105,7 @@
                   :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section4' ? 'bg-white text-[#3a3a82]' : '']"
                   @click="
                     scrollToSection(4);
-                    cerrarMenu()
+                    cerrarMenu();
                   ">
                   Programa
                 </a>
@@ -115,7 +115,7 @@
                   href="#stands"
                   @click="
                     scrollToSection(5);
-                    cerrarMenu()
+                    cerrarMenu();
                   "
                   :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section5' ? 'bg-white text-[#3a3a82]' : '']">
                   Stands
@@ -127,7 +127,7 @@
                   :class="['py-2 px-2 rounded-full hover:bg-white hover:text-black', activeSection === 'section6' ? 'bg-white text-[#3a3a82]' : '']"
                   @click="
                     scrollToSection(6);
-                    cerrarMenu()
+                    cerrarMenu();
                   ">
                   Sede
                 </a>
@@ -170,7 +170,7 @@
       <div class="grid grid-cols-1 md:grid-cols-12 lg:grid-cols-12 gap-y-12 md:gap-x-8">
         <div class="text-[15px] md:col-span-4 xl:col-span-6 max-w-md">
           <a class="flex items-center justify-start">
-            <img src="@/assets/img/logo-convension.svg" alt="Logo convension" loading="lazy" width="127" height="32" />
+            <img src="@/assets/img/logo-convension.svg" alt="Logo" loading="lazy" width="127" height="32" />
           </a>
           <!-- Social Icons -->
           <div class="mt-4">
