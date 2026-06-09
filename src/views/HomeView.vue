@@ -26,7 +26,7 @@
         <p class="text-xl text-gray-600 mb-10 max-w-2xl leading-relaxed">
           Conferencias y entrenamientos de alto nivel diseñados con un propósito claro: transformar la comunicación en un activo y consolidar conexiones humanas profundas que aceleren el éxito de las personas y las empresas.
         </p>
-        <a href="#contacto" class="inline-block bg-black text-white font-bold uppercase tracking-wider px-10 py-4 rounded-full hover:bg-tolko-red transition-colors shadow-xl shadow-tolko-red/20">Agendar Fecha</a>
+        <a href="#contacto" class="inline-block bg-black text-white font-bold uppercase tracking-wider px-10 py-4 rounded-full hover:bg-tolko-red transition-colors shadow-xl">Agendar Fecha</a>
       </div>
     </section>
 
