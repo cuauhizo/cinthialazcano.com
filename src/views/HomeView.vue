@@ -1,14 +1,16 @@
 <script setup>
-  import { useHead } from '@vueuse/head'
-  import Hero from '@/components/hero.vue'
-  import Patrocinadores from '@/components/patrocinadores.vue'
-  import Ponentes from '@/components/ponentes.vue'
-  import Programa from '@/components/programa.vue'
-  import Stands from '@/components/stands.vue'
-  import Sede from '@/components/sede.vue'
+  import { useHead } from '@vueuse/head';
+  import Hero from '@/components/hero.vue';
+  import Conferencias from '@/components/conferencias.vue';
+  import Capacitacion from '@/components/capacitacion.vue';
+  import Programa from '@/components/programa.vue';
+  import SobreMi from '@/components/sobre-mi.vue';
+  import Stands from '@/components/stands.vue';
+  import Contacto from '@/components/contacto.vue';
+  import Sede from '@/components/sede.vue';
 
   useHead({
-    title: 'Seguridad y confianza: base de las sofipos | 10ª Convención AMS',
+    title: 'Cinthia Lazcano | Conferencista Experto en Comunicación',
     meta: [
       {
         name: 'description',
@@ -34,14 +36,13 @@
       { name: 'twitter:image', content: 'https://convencionamsofipo.com/logo_ams.png' },
       { name: 'twitter:url', content: 'https://convencionamsofipo.com/' },
     ],
-  })
+  });
 </script>
 
 <template>
   <Hero />
-  <Patrocinadores />
-  <Ponentes />
-  <Programa />
-  <Stands />
-  <Sede />
+  <Conferencias />
+  <Capacitacion />
+  <SobreMi />
+  <Contacto />
 </template>

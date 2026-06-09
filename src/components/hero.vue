@@ -1,23 +1,29 @@
 <template>
   <section id="section1" class="container flex flex-wrap justify-items-center items-center min-h-lvh gap-12 py-[5rem] md:flex-nowrap md:justify-items-center xl:min-h-screen">
-    <div class="w-full md:w-8/12 mx-auto" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
+    <div class="w-full md:w-8/12 mx-auto space-y-6" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
       <h1 class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold">En el mundo de los negocios y en la vida en general, quien comunica mejor, gana.</h1>
       <p>Conferencias y entrenamientos de alto nivel diseñados con un propósito claro: transformar la comunicación en un activo y consolidar conexiones humanas profundas que aceleren el éxito de las personas y las empresas.</p>
-      <router-link to="/" class="inline-flex gap-2 rounded-full transition-all mt-2 duration-500 font-lemon-normal text-xs justify-center items-center bg-gradient-to-r from-[#4D008C] to-[#C028B9] hover:bg-gradient-to-br px-8 py-2">
-        Agenda conferencia
-      </router-link>
+      <a href="#contacto" class="inline-block bg-accentNeon text-accentDark px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform duration-200">Agenda conferencia</a>
       <!-- </div>
-    <div class="space-y-6 md:space-y-8 w-full md:w-1/2" data-aos="fade-left"> -->
-      <!-- <img src="../../public/cinthialazcano.jpg" alt="Cinthia Lazcano" class="h-96 mx-auto" /> -->
-      <!-- <h2 class="uppercase text-end leading-7">
-        <span class="text-[2.244rem] font-lemon-bold">3 y 4</span>
-        <br />
-        <span class="text-[#764796] text-[1.773rem] font-lemon-bold">de Septiembre</span>
-        <br />
-        <span class="text-[1.246rem] font-lemon-normal">Hotel Sumiya</span>
-        <br />
-        <span class="text-[1.246rem] font-lemon-light">Jiutepec Morelos</span>
-      </h2> -->
+    <div class="space-y-6 md:space-y-8 w-full md:w-1/2" data-aos="fade-left">
+      <img src="../../public/cinthialazcano.jpg" alt="Cinthia Lazcano" class="w-4/5 mx-auto" /> -->
+    </div>
+  </section>
+  <section class="max-w-7xl mx-auto px-6 pt-12 pb-20 flex flex-col lg:flex-row items-center gap-12">
+    <div class="flex-1 min-w-[300px]">
+      <span class="inline-block px-4 py-1.5 bg-white border border-gray-200 rounded-full text-xs font-bold uppercase tracking-wider mb-6">Speaker & Mentor</span>
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tighter leading-[1.05] mb-6">COMUNICAR ES EL ARTE DE IMPACTAR.</h1>
+      <p class="text-lg md:text-xl text-textMuted mb-10 max-w-lg">Eleva el mensaje de tu equipo con conferencias y estrategias diseñadas para conectar y persuadir.</p>
+      <a href="#contacto" class="inline-block bg-accentNeon text-accentDark px-8 py-4 rounded-full font-bold text-lg hover:scale-105 transition-transform duration-200">Agendar Fecha</a>
+    </div>
+
+    <div class="flex-1 w-full flex gap-5 relative min-h-[400px] md:min-h-[500px]">
+      <!-- <div class="w-[55%] h-[400px] md:h-[480px] bg-cardPurple rounded-[40px] bg-cover bg-center" style="background-image: url('/ruta-a-tu-foto-1.jpg')"></div> -->
+      <div class="w-[55%] h-[400px] md:h-[480px] bg-cardPurple rounded-[40px] bg-cover bg-center" style="background-image: url('/public/cinthialazcano.jpg')"></div>
+      <div class="w-[40%] flex flex-col gap-5 mt-12">
+        <div class="h-[200px] bg-cardYellow rounded-[30px] bg-cover bg-center" style="background-image: url('/ruta-a-tu-foto-2.jpg')"></div>
+        <div class="h-[230px] bg-cardGreen rounded-[30px] bg-cover bg-center" style="background-image: url('/ruta-a-tu-foto-3.jpg')"></div>
+      </div>
     </div>
   </section>
 </template>

@@ -1,7 +1,11 @@
 <template>
   <section id="section1" class="container flex flex-wrap justify-items-center items-center content-center min-h-lvh gap-12 py-[5rem]">
     <div class="w-full" data-aos="fade-right" data-aos-anchor-placement="top-bottom">
-      <h1 class="hero-text font-lemon-bold text-center text-[2.244rem] md:text-[3.196rem] font-bold">10<sup>a</sup> Convención</h1>
+      <h1 class="hero-text font-lemon-bold text-center text-[2.244rem] md:text-[3.196rem] font-bold">
+        10
+        <sup>a</sup>
+        Convención
+      </h1>
       <!-- <h2 class="hero-text font-lemon-bold text-[2.244rem] md:text-[3.196rem] font-bold">
         Seguridad y confianza:<br>
         <span class="font-lemon-normal font-normal text-[1.773rem] md:text-[2.525rem]">la base de las sofipos</span>
@@ -40,9 +44,12 @@
     </div>
     <div class="space-y-6 md:space-y-8 w-full" data-aos="fade-left">
       <h3 class="uppercase text-center leading-7">
-        <span class="text-[2.244rem] font-lemon-bold">3 y 4 </span><br>
-        <span class="text-[#764796] text-[1.773rem] font-lemon-bold">de Septiembre </span><br>
-        <span class="text-[1.246rem] font-lemon-normal">Hotel Sumiya </span><br>
+        <span class="text-[2.244rem] font-lemon-bold">3 y 4</span>
+        <br />
+        <span class="text-[#764796] text-[1.773rem] font-lemon-bold">de Septiembre</span>
+        <br />
+        <span class="text-[1.246rem] font-lemon-normal">Hotel Sumiya</span>
+        <br />
         <span class="text-[1.246rem] font-lemon-light">Jiutepec Morelos</span>
       </h3>
     </div>
@@ -50,8 +57,8 @@
 </template>
 
 <script setup>
-  import { ref } from 'vue'
-  import { useHead } from '@vueuse/head'
+  import { ref } from 'vue';
+  import { useHead } from '@vueuse/head';
 
   import amextra from '@/assets/img/sofipos/amextra.png';
   import asp from '@/assets/img/sofipos/asp.png';
@@ -105,27 +112,26 @@
     { id: 22, url: 'https://www.storicard.com/', src: stori, alt: 'Stori' },
     { id: 23, url: 'https://www.financierasumate.com.mx/', src: sumate, alt: 'Sumate' },
     { id: 25, url: 'https://xepelin.com/mx', src: xepelin, alt: 'Xepelin' },
-  ])
+  ]);
 
   useHead({
-  title: 'Seguridad y confianza: base de las sofipos | 10ª Convención AMS',
-  meta: [
-    { name: 'description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza. Descubre los avances del sector en la 10ª Convención AMS, el evento clave para las finanzas populares.' },
-    { property: 'og:title', content: '10ª Convención AMS | Seguridad y confianza' },
-    { property: 'og:description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza. Descubre los avances del sector en la 10ª Convención AMS.' },
-    { property: 'og:image', content: 'https://convencionamsofipo.com/logo_ams.png' },
-    { property: 'og:url', content: 'https://convencionamsofipo.com/' },
-    { property: 'og:type', content: 'website' },
+    title: 'Seguridad y confianza: base de las sofipos | 10ª Convención AMS',
+    meta: [
+      { name: 'description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza. Descubre los avances del sector en la 10ª Convención AMS, el evento clave para las finanzas populares.' },
+      { property: 'og:title', content: '10ª Convención AMS | Seguridad y confianza' },
+      { property: 'og:description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza. Descubre los avances del sector en la 10ª Convención AMS.' },
+      { property: 'og:image', content: 'https://convencionamsofipo.com/logo_ams.png' },
+      { property: 'og:url', content: 'https://convencionamsofipo.com/' },
+      { property: 'og:type', content: 'website' },
 
-    // Twitter Card
-    { name: 'twitter:card', content: 'summary_large_image' },
-    { name: 'twitter:title', content: '10ª Convención AMS | Seguridad y confianza' },
-    { name: 'twitter:description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza.' },
-    { name: 'twitter:image', content: 'https://convencionamsofipo.com/logo_ams.png' },
-    { name: 'twitter:url', content: 'https://convencionamsofipo.com/' }
-  ],
-})
+      // Twitter Card
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: '10ª Convención AMS | Seguridad y confianza' },
+      { name: 'twitter:description', content: 'Las SOFIPOs construyen el futuro con seguridad y confianza.' },
+      { name: 'twitter:image', content: 'https://convencionamsofipo.com/logo_ams.png' },
+      { name: 'twitter:url', content: 'https://convencionamsofipo.com/' },
+    ],
+  });
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>
