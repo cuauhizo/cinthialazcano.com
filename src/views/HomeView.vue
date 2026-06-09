@@ -40,7 +40,7 @@
           </p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid lg:grid-cols-3 gap-8">
           <div class="p-10 rounded-[30px] bg-gray-50 border border-gray-100 hover:shadow-2xl hover:border-tolko-red/30 transition-all group">
             <span class="text-xs font-bold text-tolko-red uppercase tracking-widest mb-4 block">Plática</span>
             <h3 class="font-lemon-bold text-2xl mb-4 group-hover:text-tolko-red transition-colors">El Poder de la Comunicación de Alto Nivel: impacto ejecutivo</h3>
@@ -84,7 +84,7 @@
           </p>
         </div>
 
-        <div class="grid md:grid-cols-3 gap-8">
+        <div class="grid lg:grid-cols-3 gap-8">
           <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition-shadow border-l-4 border-tolko-red">
             <h3 class="font-lemon-bold text-xl mb-4">Comunica con energía: el poder de tus palabras</h3>
             <p class="text-gray-600 mb-4">
@@ -125,9 +125,9 @@
     </section>
 
     <section id="sobre-mi" class="py-24 bg-black text-white">
-      <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center gap-16">
+      <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-16">
         <div class="flex-1 w-full relative">
-          <div class="aspect-[4/5] bg-gray-800 rounded-[40px] overflow-hidden bg-cover bg-center" style="background-image: url('/cinthialazcano.jpg')"></div>
+          <div class="aspect-square bg-gray-800 rounded-[40px] overflow-hidden bg-cover bg-top" style="background-image: url('/cinthialazcano.jpg')"></div>
           <div class="absolute -bottom-6 -right-6 bg-tolko-red text-white p-8 rounded-[30px] font-lemon-bold text-2xl shadow-2xl">
             +20
             <br />

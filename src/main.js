@@ -48,11 +48,11 @@ export const createApp = ViteSSG(
     // La lógica actual en tu main.js de desplazamiento y sección activa podría requerir refactorización.
     // Idealmente, la gestión de secciones activas y desplazamiento debería estar en un componente o un hook de Vue.
     // Aquí un ejemplo muy básico de cómo integrar la lógica de AOS:
-    if (isClient) {
-        AOS.init({
-            // tus opciones de AOS
-        });
-    }
+    // if (isClient) {
+    //   AOS.init({
+    //     // tus opciones de AOS
+    //   });
+    // }
 
     // Para la lógica de scroll y sección activa, es mejor que uses los hooks de Vue Router
     // o lo manejes dentro de un layout o componente principal.
@@ -62,5 +62,5 @@ export const createApp = ViteSSG(
     //     window.scrollTo({ top: 0, behavior: 'smooth' });
     //   }
     // });
-  }
+  },
 );
