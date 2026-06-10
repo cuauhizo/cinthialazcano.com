@@ -1,4 +1,5 @@
 <script setup>
+  import { ref } from 'vue';
   import { useHead } from '@vueuse/head';
 
   // SEO Actualizado para Cinthia
@@ -12,6 +13,57 @@
       { property: 'og:type', content: 'website' },
     ],
   });
+
+  // Variables reactivas para el formulario
+  const formData = ref({
+    name: '',
+    email: '',
+    message: '',
+  });
+
+  const isSubmitting = ref(false);
+  const formStatus = ref(''); // Para mostrar mensaje de éxito o error
+
+  const enviarFormulario = async () => {
+    isSubmitting.value = true;
+    formStatus.value = '';
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          // REEMPLAZA ESTO CON LA LLAVE QUE TE LLEGÓ AL CORREO:
+          access_key: '25c74615-c4c9-4fb5-b53d-b5c06468675c',
+          name: formData.value.name,
+          email: formData.value.email,
+          message: formData.value.message,
+          subject: 'Nueva solicitud de conferencia desde la Web',
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        formStatus.value = 'success';
+        // Limpiar formulario tras éxito
+        formData.value = { name: '', email: '', message: '' };
+      } else {
+        formStatus.value = 'error';
+      }
+    } catch (error) {
+      console.error('Error enviando el formulario:', error);
+      formStatus.value = 'error';
+    } finally {
+      isSubmitting.value = false;
+      setTimeout(() => {
+        formStatus.value = '';
+      }, 5000); // 5000 milisegundos = 5 segundos
+    }
+  };
 </script>
 
 <template>
@@ -136,7 +188,7 @@
         <h2 class="font-lemon-bold text-4xl mb-4 text-black">Quiero que Cinthia nos ayude a mejorar nuestra comunicación</h2>
         <p class="text-gray-600 mb-12">Completa el formulario y nos pondremos en contacto contigo a la brevedad.</p>
 
-        <form class="bg-gray-50 p-10 rounded-[40px] shadow-sm border border-gray-100 flex flex-col gap-6 text-left">
+        <!-- <form class="bg-gray-50 p-10 rounded-[40px] shadow-sm border border-gray-100 flex flex-col gap-6 text-left">
           <div class="grid md:grid-cols-2 gap-6">
             <div>
               <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Nombre o Empresa</label>
@@ -152,6 +204,31 @@
             <textarea rows="5" required class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:outline-none focus:border-tolko-red focus:ring-1 focus:ring-tolko-red transition-all resize-none"></textarea>
           </div>
           <button type="submit" class="bg-tolko-red text-white font-bold uppercase tracking-widest py-5 rounded-xl hover:bg-black transition-colors shadow-lg shadow-tolko-red/20 mt-4">Enviar Solicitud</button>
+        </form> -->
+
+        <form @submit.prevent="enviarFormulario" class="bg-gray-50 p-10 rounded-[40px] shadow-sm flex flex-col gap-6 text-left">
+          <div class="grid md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-bold text-gray-700 mb-2 uppercase">Nombre o Empresa</label>
+              <input type="text" v-model="formData.name" required class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:border-tolko-red outline-none" />
+            </div>
+            <div>
+              <label class="block text-sm font-bold text-gray-700 mb-2 uppercase">Correo Electrónico</label>
+              <input type="email" v-model="formData.email" required class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:border-tolko-red outline-none" />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-gray-700 mb-2 uppercase">Cuéntanos sobre tus necesidades</label>
+            <textarea rows="5" v-model="formData.message" required class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:border-tolko-red outline-none resize-none"></textarea>
+          </div>
+
+          <p v-if="formStatus === 'success'" class="text-green-600 font-bold text-center">¡Mensaje enviado correctamente! Nos pondremos en contacto pronto.</p>
+          <p v-if="formStatus === 'error'" class="text-red-600 font-bold text-center">Hubo un error al enviar el mensaje. Intenta nuevamente.</p>
+
+          <button type="submit" :disabled="isSubmitting" class="bg-tolko-red text-white font-bold uppercase tracking-widest py-5 rounded-xl hover:bg-black transition-colors shadow-lg shadow-tolko-red/20 mt-4 disabled:opacity-50">
+            {{ isSubmitting ? 'Enviando...' : 'Enviar Solicitud' }}
+          </button>
         </form>
       </div>
     </section>
