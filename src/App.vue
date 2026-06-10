@@ -75,10 +75,11 @@
             </a>
           </span>
         </div>
-        <div class="flex flex-col md:flex-row gap-6 font-bold text-sm tracking-widest uppercase">
-          <a href="#" class="hover:text-tolko-red transition-colors">Tolko Comunicación</a>
-          <a href="#" class="hover:text-tolko-red transition-colors">Tolko Producciones</a>
-          <a href="#" class="hover:text-tolko-red transition-colors">Lecciones de Vuelo</a>
+        <div class="flex flex-col md:flex-row gap-6 font-bold text-sm tracking-widest uppercase items-center">
+          <img src="./assets/img/logo-tolko.svg" class="h-8 w-8" alt="Logo Tolko" />
+          <a href="https://tolkogroup.com/" target="_blank" class="hover:text-tolko-red transition-colors">Tolko Comunicación</a>
+          <a href="https://tolkoproducciones.com/" target="_blank" class="hover:text-tolko-red transition-colors">Tolko Producciones</a>
+          <a href="https://leccionesdevuelo.com/" target="_blank" class="hover:text-tolko-red transition-colors">Lecciones de Vuelo</a>
         </div>
       </div>
       <div class="text-center text-gray-500 text-xs mt-12 border-t border-gray-800 pt-6">&copy; {{ anio }} Cinthia Lazcano. Todos los derechos reservados.</div>
