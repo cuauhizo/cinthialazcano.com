@@ -70,6 +70,14 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
+.bg-hero {
+  /* background-image: url(img/bg-hero.png); */
+  background-image: url(img/bg-hero-alt.png);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  background-position: 180% center;
+}
+
 .texto-con-bordes,
 .texto-con-bordes-red {
   -webkit-text-fill-color: transparent;

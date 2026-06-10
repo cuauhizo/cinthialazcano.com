@@ -83,20 +83,21 @@
 
 <template>
   <div>
-    <section class="max-w-7xl mx-auto px-6 py-20 lg:py-32 flex flex-col lg:flex-row items-center gap-12">
-      <div class="flex-1">
-        <h1 class="font-lemon-bold text-5xl md:text-6xl lg:text-7xl leading-[1.1] mb-8 text-black">
-          En el mundo de los negocios y en la vida en general,
-          <br />
-          <span class="text-tolko-purple">quien comunica mejor, gana.</span>
-        </h1>
-        <p class="text-xl text-gray-600 mb-10 max-w-2xl leading-relaxed">
-          Conferencias y entrenamientos diseñados con un propósito claro: transformar la comunicación en un activo y consolidar conexiones profundas que aceleren el éxito de personas y empresas.
-        </p>
-        <a href="#contacto" class="inline-block bg-black text-white font-bold uppercase tracking-wider px-10 py-4 rounded-full hover:bg-tolko-purple transition-colors shadow-xl">Agendar Fecha</a>
-      </div>
-    </section>
-
+    <div class="bg-hero">
+      <section class="max-w-7xl mx-auto px-6 py-20 lg:py-32 flex flex-col lg:flex-row items-center gap-12">
+        <div class="flex-1">
+          <h1 class="font-lemon-bold text-5xl md:text-6xl lg:text-7xl leading-[1.1] mb-8 text-black">
+            En el mundo de los negocios y en la vida en general,
+            <br />
+            <span class="text-tolko-purple">quien comunica mejor, gana.</span>
+          </h1>
+          <p class="text-xl text-gray-600 mb-10 max-w-2xl leading-relaxed">
+            Conferencias y entrenamientos diseñados con un propósito claro: transformar la comunicación en un activo y consolidar conexiones profundas que aceleren el éxito de personas y empresas.
+          </p>
+          <a href="#contacto" class="inline-block bg-black text-white font-bold uppercase tracking-wider px-10 py-4 rounded-full hover:bg-tolko-purple transition-colors shadow-xl">Agendar Fecha</a>
+        </div>
+      </section>
+    </div>
     <section id="ejecutiva" class="bg-white py-24">
       <div class="max-w-7xl mx-auto px-6">
         <div class="mb-16">
@@ -108,26 +109,29 @@
         </div>
 
         <div class="grid lg:grid-cols-3 gap-8">
-          <div class="p-10 rounded-[30px] bg-gray-50 border border-gray-100 hover:shadow-2xl hover:border-tolko-purple/30 transition-all group">
+          <div class="relative p-10 rounded-[30px] bg-gray-50 border border-gray-100 hover:shadow-2xl hover:border-tolko-purple/30 transition-all group">
             <span class="text-xs font-bold text-tolko-purple uppercase tracking-widest mb-4 block">Conferencia</span>
             <h3 class="font-lemon-bold text-2xl mb-4 group-hover:text-tolko-purple transition-colors">El Poder de la Comunicación de Alto Nivel: impacto ejecutivo</h3>
             <p class="text-gray-600 mb-4">
               Cada vez que un líder habla, la reputación y el valor de la compañía están en juego. Esta conferencia está diseñada exclusivamente para que la alta dirección domine la arena pública con autoridad, claridad e influencia.
             </p>
+            <div class="h-0.5 w-[90%] bg-tolko-purple absolute right-0"></div>
           </div>
 
-          <div class="p-10 rounded-[30px] bg-gray-50 border border-gray-100 hover:shadow-2xl hover:border-tolko-purple/30 transition-all group">
+          <div class="relative p-10 rounded-[30px] bg-gray-50 border border-gray-100 hover:shadow-2xl hover:border-tolko-purple/30 transition-all group">
             <span class="text-xs font-bold text-tolko-purple uppercase tracking-widest mb-4 block">Conferencia</span>
             <h3 class="font-lemon-bold text-2xl mb-4 group-hover:text-tolko-purple transition-colors">Comunicación en tiempos de crisis: conectar en la incertidumbre</h3>
             <p class="text-gray-600 mb-4">
               Esta conferencia dota a los líderes de las herramientas de contención y gestión necesarias para liderar la narrativa cuando la presión es máxima. Se trata de gobernar el mensaje y transmitir comunicación firme y ética.
             </p>
+            <div class="h-0.5 w-[90%] bg-tolko-purple absolute right-0"></div>
           </div>
 
-          <div class="p-10 rounded-[30px] bg-tolko-purple text-white shadow-xl shadow-tolko-purple/20 transform md:-translate-y-4">
+          <div class="relative p-10 rounded-[30px] bg-tolko-purple text-white shadow-xl shadow-tolko-purple/20 transform md:-translate-y-4">
             <span class="text-xs font-bold text-white/80 uppercase tracking-widest mb-4 block">Taller</span>
             <h3 class="font-lemon-bold text-2xl mb-4">Entrenamiento de medios</h3>
             <p class="text-white/90 mb-4">Preparación para que los líderes enfrenten cualquier escenario periodístico —ruedas de prensa y entrevistas— con absoluta seguridad y énfasis estratégico, controlando la narrativa.</p>
+            <div class="h-0.5 w-[90%] bg-white absolute right-0 bottom-10"></div>
           </div>
         </div>
       </div>

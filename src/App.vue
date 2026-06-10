@@ -29,10 +29,13 @@
 <template>
   <div class="font-raleway text-gray-800 bg-gray-50 min-h-screen flex flex-col">
     <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
-      <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-        <a href="#" class="font-lemon-bold text-2xl tracking-tighter text-black flex items-center gap-2">
+      <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center h-20">
+        <!-- <a href="#" class="font-lemon-bold text-2xl tracking-tighter text-black flex items-center gap-2">
           <span class="w-4 h-4 bg-tolko-purple rounded-full inline-block"></span>
           Cinthia Lazcano
+        </a> -->
+        <a href="#">
+          <img src="./assets/img/CL_Logo.svg" alt="" class="h-14" />
         </a>
 
         <div class="hidden md:flex gap-8 items-center font-bold text-sm uppercase tracking-wide">
@@ -53,7 +56,7 @@
       </div>
     </header>
 
-    <main class="flex-grow pt-24">
+    <main class="flex-grow pt-20">
       <router-view></router-view>
 
       <button class="fixed right-6 bottom-6 bg-tolko-purple text-white p-3 rounded-full shadow-lg z-50 hover:scale-110 transition-transform" @click="scrollToTop" v-show="showScrollTopButton">↑</button>
