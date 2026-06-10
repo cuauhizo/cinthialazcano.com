@@ -1,6 +1,9 @@
 <script setup>
   import { ref } from 'vue';
   import { useHead } from '@vueuse/head';
+  import { useGtm } from '@gtm-support/vue-gtm';
+
+  const gtm = useGtm();
 
   // SEO Actualizado para Cinthia
   useHead({
@@ -49,6 +52,17 @@
 
       if (result.success) {
         formStatus.value = 'success';
+
+        // 👇 Disparamos el evento a Tag Manager
+        if (gtm) {
+          gtm.trackEvent({
+            event: 'form_submission',
+            category: 'Lead',
+            action: 'Formulario de Contacto Exitoso',
+            label: formData.value.name,
+          });
+        }
+
         // Limpiar formulario tras éxito
         formData.value = { name: '', email: '', message: '' };
       } else {
@@ -155,7 +169,7 @@
     <section id="sobre-mi" class="py-24 bg-black text-white">
       <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-16">
         <div class="flex-1 w-full relative">
-          <div class="aspect-[4/3] bg-white rounded-[40px] overflow-hidden bg-contain bg-no-repeat bg-top" style="background-image: url('/cinthialazcano.jpg')"></div>
+          <img src="/cinthialazcano.jpg" alt="Cinthia Lazcano - Conferencista y Especialista en Comunicación" class="aspect-[4/3] bg-white object-contain rounded-[40px]" />
           <div class="absolute -bottom-6 -right-6 bg-tolko-red text-white p-8 rounded-[30px] font-lemon-bold text-2xl shadow-2xl">
             +20
             <br />
@@ -187,25 +201,6 @@
       <div class="max-w-4xl mx-auto px-6 text-center">
         <h2 class="font-lemon-bold text-4xl mb-4 text-black">Quiero que Cinthia nos ayude a mejorar nuestra comunicación</h2>
         <p class="text-gray-600 mb-12">Completa el formulario y nos pondremos en contacto contigo a la brevedad.</p>
-
-        <!-- <form class="bg-gray-50 p-10 rounded-[40px] shadow-sm border border-gray-100 flex flex-col gap-6 text-left">
-          <div class="grid md:grid-cols-2 gap-6">
-            <div>
-              <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Nombre o Empresa</label>
-              <input type="text" required class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:outline-none focus:border-tolko-red focus:ring-1 focus:ring-tolko-red transition-all" />
-            </div>
-            <div>
-              <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Correo Electrónico</label>
-              <input type="email" required class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:outline-none focus:border-tolko-red focus:ring-1 focus:ring-tolko-red transition-all" />
-            </div>
-          </div>
-          <div>
-            <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Cuéntanos sobre tus necesidades</label>
-            <textarea rows="5" required class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:outline-none focus:border-tolko-red focus:ring-1 focus:ring-tolko-red transition-all resize-none"></textarea>
-          </div>
-          <button type="submit" class="bg-tolko-red text-white font-bold uppercase tracking-widest py-5 rounded-xl hover:bg-black transition-colors shadow-lg shadow-tolko-red/20 mt-4">Enviar Solicitud</button>
-        </form> -->
-
         <form @submit.prevent="enviarFormulario" class="bg-gray-50 p-10 rounded-[40px] shadow-sm flex flex-col gap-6 text-left">
           <div class="grid md:grid-cols-2 gap-6">
             <div>

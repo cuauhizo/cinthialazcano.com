@@ -2,7 +2,4 @@
 User-agent: *
 Allow: /
 
-Disallow: /galeria/
-
-# Ubicación del Sitemap
-Sitemap: https://www.convencionamsofipo.com/sitemap.xml
+Sitemap: https://cinthialazcano.com/sitemap.xml

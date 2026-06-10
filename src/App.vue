@@ -65,7 +65,7 @@
           <h2 class="font-lemon-bold text-2xl mb-2">Cinthia Lazcano</h2>
           <p class="text-gray-400 text-sm mb-4">Especialista en comunicación estratégica, personal y empresarial.</p>
           <span class="inline-flex gap-2.5 mt-2 sm:ml-auto sm:mt-0 sm:justify-start">
-            <a href="https://www.linkedin.com/in/cinthialazcanoroa/" alt="LinkedIn" target="_blank">
+            <a href="https://www.linkedin.com/in/cinthialazcanoroa/" aria-label="Perfil de LinkedIn de Cinthia Lazcano" target="_blank" rel="noopener noreferrer">
               <div class="w-10 h-10 bg-[#0e76a8] rounded-full flex items-center justify-center text-white shadow-sm">
                 <svg class="w-5 h-5 fill-current" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
                   <path
