@@ -31,32 +31,32 @@
     <header class="fixed w-full z-50 bg-white/90 backdrop-blur-md shadow-sm">
       <nav class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <a href="#" class="font-lemon-bold text-2xl tracking-tighter text-black flex items-center gap-2">
-          <span class="w-4 h-4 bg-tolko-red rounded-full inline-block"></span>
+          <span class="w-4 h-4 bg-tolko-purple rounded-full inline-block"></span>
           Cinthia Lazcano
         </a>
 
         <div class="hidden md:flex gap-8 items-center font-bold text-sm uppercase tracking-wide">
-          <a href="#ejecutiva" class="hover:text-tolko-red transition-colors">Comunicación Ejecutiva</a>
-          <a href="#personal" class="hover:text-tolko-red transition-colors">Comunicación Personal</a>
-          <a href="#sobre-mi" class="hover:text-tolko-red transition-colors">Sobre Mí</a>
-          <a href="#contacto" class="bg-tolko-red text-white px-6 py-2 rounded-full hover:bg-black transition-colors">Contratar</a>
+          <a href="#ejecutiva" class="hover:text-tolko-purple transition-colors">Comunicación Ejecutiva</a>
+          <a href="#personal" class="hover:text-tolko-purple transition-colors">Comunicación Personal</a>
+          <a href="#sobre-mi" class="hover:text-tolko-purple transition-colors">Sobre Mí</a>
+          <a href="#contacto" class="bg-tolko-purple text-white px-6 py-2 rounded-full hover:bg-black transition-colors">Contratar</a>
         </div>
 
-        <button @click="toggleMenu" class="md:hidden text-2xl text-tolko-red">☰</button>
+        <button @click="toggleMenu" class="md:hidden text-2xl text-tolko-purple">☰</button>
       </nav>
 
       <div v-show="isMenuOpen" class="md:hidden bg-white shadow-lg absolute w-full left-0 top-full flex flex-col font-bold uppercase text-sm">
         <a @click="toggleMenu" href="#ejecutiva" class="p-4 border-b">Comunicación Ejecutiva</a>
         <a @click="toggleMenu" href="#personal" class="p-4 border-b">Comunicación Personal</a>
         <a @click="toggleMenu" href="#sobre-mi" class="p-4 border-b">Sobre Mí</a>
-        <a @click="toggleMenu" href="#contacto" class="p-4 text-tolko-red">Contratar</a>
+        <a @click="toggleMenu" href="#contacto" class="p-4 text-tolko-purple">Contratar</a>
       </div>
     </header>
 
     <main class="flex-grow pt-24">
       <router-view></router-view>
 
-      <button class="fixed right-6 bottom-6 bg-tolko-red text-white p-3 rounded-full shadow-lg z-50 hover:scale-110 transition-transform" @click="scrollToTop" v-show="showScrollTopButton">↑</button>
+      <button class="fixed right-6 bottom-6 bg-tolko-purple text-white p-3 rounded-full shadow-lg z-50 hover:scale-110 transition-transform" @click="scrollToTop" v-show="showScrollTopButton">↑</button>
     </main>
 
     <footer class="bg-black text-white py-12">
@@ -77,9 +77,9 @@
         </div>
         <div class="flex flex-col md:flex-row gap-6 font-bold text-sm tracking-widest uppercase items-center">
           <img src="./assets/img/logo-tolko.svg" class="h-8 w-8" alt="Logo Tolko" />
-          <a href="https://tolkogroup.com/" target="_blank" class="hover:text-tolko-red transition-colors">Tolko Comunicación</a>
-          <a href="https://tolkoproducciones.com/" target="_blank" class="hover:text-tolko-red transition-colors">Tolko Producciones</a>
-          <a href="https://leccionesdevuelo.com/" target="_blank" class="hover:text-tolko-red transition-colors">Lecciones de Vuelo</a>
+          <a href="https://tolkogroup.com/" target="_blank" class="hover:text-tolko-purple transition-colors">Tolko Comunicación</a>
+          <a href="https://tolkoproducciones.com/" target="_blank" class="hover:text-tolko-purple transition-colors">Tolko Producciones</a>
+          <a href="https://leccionesdevuelo.com/" target="_blank" class="hover:text-tolko-purple transition-colors">Lecciones de Vuelo</a>
         </div>
       </div>
       <div class="text-center text-gray-500 text-xs mt-12 border-t border-gray-800 pt-6">&copy; {{ anio }} Cinthia Lazcano. Todos los derechos reservados.</div>

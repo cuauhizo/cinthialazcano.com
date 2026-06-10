@@ -13,6 +13,7 @@ export default {
       },
       colors: {
         'tolko-red': 'rgb(204, 0, 50)',
+        'tolko-purple': 'rgb(89, 0, 142)',
         bgLight: '#F8F9FA',
         textMain: '#111111',
         textMuted: '#555555',

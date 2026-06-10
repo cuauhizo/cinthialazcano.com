@@ -21,6 +21,7 @@
   const formData = ref({
     name: '',
     email: '',
+    phone: '',
     message: '',
   });
 
@@ -43,6 +44,7 @@
           access_key: '25c74615-c4c9-4fb5-b53d-b5c06468675c',
           name: formData.value.name,
           email: formData.value.email,
+          phone: formData.value.phone,
           message: formData.value.message,
           subject: 'Nueva solicitud de conferencia desde la Web',
         }),
@@ -53,7 +55,6 @@
       if (result.success) {
         formStatus.value = 'success';
 
-        // 👇 Disparamos el evento a Tag Manager
         if (gtm) {
           gtm.trackEvent({
             event: 'form_submission',
@@ -64,7 +65,7 @@
         }
 
         // Limpiar formulario tras éxito
-        formData.value = { name: '', email: '', message: '' };
+        formData.value = { name: '', email: '', phone: '', message: '' };
       } else {
         formStatus.value = 'error';
       }
@@ -87,12 +88,12 @@
         <h1 class="font-lemon-bold text-5xl md:text-6xl lg:text-7xl leading-[1.1] mb-8 text-black">
           En el mundo de los negocios y en la vida en general,
           <br />
-          <span class="text-tolko-red">quien comunica mejor, gana.</span>
+          <span class="text-tolko-purple">quien comunica mejor, gana.</span>
         </h1>
         <p class="text-xl text-gray-600 mb-10 max-w-2xl leading-relaxed">
           Conferencias y entrenamientos diseñados con un propósito claro: transformar la comunicación en un activo y consolidar conexiones profundas que aceleren el éxito de personas y empresas.
         </p>
-        <a href="#contacto" class="inline-block bg-black text-white font-bold uppercase tracking-wider px-10 py-4 rounded-full hover:bg-tolko-red transition-colors shadow-xl">Agendar Fecha</a>
+        <a href="#contacto" class="inline-block bg-black text-white font-bold uppercase tracking-wider px-10 py-4 rounded-full hover:bg-tolko-purple transition-colors shadow-xl">Agendar Fecha</a>
       </div>
     </section>
 
@@ -107,23 +108,23 @@
         </div>
 
         <div class="grid lg:grid-cols-3 gap-8">
-          <div class="p-10 rounded-[30px] bg-gray-50 border border-gray-100 hover:shadow-2xl hover:border-tolko-red/30 transition-all group">
-            <span class="text-xs font-bold text-tolko-red uppercase tracking-widest mb-4 block">Conferencia</span>
-            <h3 class="font-lemon-bold text-2xl mb-4 group-hover:text-tolko-red transition-colors">El Poder de la Comunicación de Alto Nivel: impacto ejecutivo</h3>
+          <div class="p-10 rounded-[30px] bg-gray-50 border border-gray-100 hover:shadow-2xl hover:border-tolko-purple/30 transition-all group">
+            <span class="text-xs font-bold text-tolko-purple uppercase tracking-widest mb-4 block">Conferencia</span>
+            <h3 class="font-lemon-bold text-2xl mb-4 group-hover:text-tolko-purple transition-colors">El Poder de la Comunicación de Alto Nivel: impacto ejecutivo</h3>
             <p class="text-gray-600 mb-4">
               Cada vez que un líder habla, la reputación y el valor de la compañía están en juego. Esta conferencia está diseñada exclusivamente para que la alta dirección domine la arena pública con autoridad, claridad e influencia.
             </p>
           </div>
 
-          <div class="p-10 rounded-[30px] bg-gray-50 border border-gray-100 hover:shadow-2xl hover:border-tolko-red/30 transition-all group">
-            <span class="text-xs font-bold text-tolko-red uppercase tracking-widest mb-4 block">Conferencia</span>
-            <h3 class="font-lemon-bold text-2xl mb-4 group-hover:text-tolko-red transition-colors">Comunicación en tiempos de crisis: conectar en la incertidumbre</h3>
+          <div class="p-10 rounded-[30px] bg-gray-50 border border-gray-100 hover:shadow-2xl hover:border-tolko-purple/30 transition-all group">
+            <span class="text-xs font-bold text-tolko-purple uppercase tracking-widest mb-4 block">Conferencia</span>
+            <h3 class="font-lemon-bold text-2xl mb-4 group-hover:text-tolko-purple transition-colors">Comunicación en tiempos de crisis: conectar en la incertidumbre</h3>
             <p class="text-gray-600 mb-4">
               Esta conferencia dota a los líderes de las herramientas de contención y gestión necesarias para liderar la narrativa cuando la presión es máxima. Se trata de gobernar el mensaje y transmitir comunicación firme y ética.
             </p>
           </div>
 
-          <div class="p-10 rounded-[30px] bg-tolko-red text-white shadow-xl shadow-tolko-red/20 transform md:-translate-y-4">
+          <div class="p-10 rounded-[30px] bg-tolko-purple text-white shadow-xl shadow-tolko-purple/20 transform md:-translate-y-4">
             <span class="text-xs font-bold text-white/80 uppercase tracking-widest mb-4 block">Taller</span>
             <h3 class="font-lemon-bold text-2xl mb-4">Entrenamiento de medios</h3>
             <p class="text-white/90 mb-4">Preparación para que los líderes enfrenten cualquier escenario periodístico —ruedas de prensa y entrevistas— con absoluta seguridad y énfasis estratégico, controlando la narrativa.</p>
@@ -143,8 +144,8 @@
         </div>
 
         <div class="grid lg:grid-cols-3 gap-8">
-          <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition-shadow border-l-4 border-tolko-red">
-            <span class="text-xs font-bold text-tolko-red uppercase tracking-widest mb-4 block">Conferencia</span>
+          <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition-shadow border-l-4 border-tolko-purple">
+            <span class="text-xs font-bold text-tolko-purple uppercase tracking-widest mb-4 block">Conferencia</span>
             <h3 class="font-lemon-bold text-xl mb-4">Comunica con energía: el poder de tus palabras</h3>
             <p class="text-gray-600 mb-4">
               Las palabras tienen un gran poder, pero la energía con la que las dices es lo que determina si tu mensaje se queda en la mente de las personas. Esta conferencia da herramientas prácticas para conectar e inspirar.
@@ -152,13 +153,13 @@
           </div>
 
           <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition-shadow border-l-4 border-black">
-            <span class="text-xs font-bold text-tolko-red uppercase tracking-widest mb-4 block">Conferencia</span>
+            <span class="text-xs font-bold text-tolko-purple uppercase tracking-widest mb-4 block">Conferencia</span>
             <h3 class="font-lemon-bold text-xl mb-4">Sé memorable: comunica para trascender</h3>
             <p class="text-gray-600 mb-4">En la era de la saturación de mensajes, esta conferencia impulsa la comunicación transformadora, fusionando estrategia de negocios, storytelling y propósito, convirtiéndola en un activo estratégico.</p>
           </div>
 
           <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition-shadow border-l-4 border-gray-400">
-            <span class="text-xs font-bold text-tolko-red uppercase tracking-widest mb-4 block">Conferencia</span>
+            <span class="text-xs font-bold text-tolko-purple uppercase tracking-widest mb-4 block">Conferencia</span>
             <h3 class="font-lemon-bold text-xl mb-4">Comunica con empatía: conecta con la mente del otro</h3>
             <p class="text-gray-600 mb-4">La comunicación empática es un gran diferenciador en los negocios.Esta conferencia habilita a las personas a convertir interacciones en conexiones, escuchando para comprender y construir confianza.</p>
           </div>
@@ -170,7 +171,7 @@
       <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-16">
         <div class="flex-1 w-full relative">
           <img src="/cinthialazcano.jpg" alt="Cinthia Lazcano - Conferencista y Especialista en Comunicación" class="aspect-[4/3] bg-white object-contain rounded-[40px]" />
-          <div class="absolute -bottom-6 -right-6 bg-tolko-red text-white p-8 rounded-[30px] font-lemon-bold text-2xl shadow-2xl">
+          <div class="absolute -bottom-6 -right-6 bg-tolko-purple text-white p-8 rounded-[30px] font-lemon-bold text-2xl shadow-2xl">
             +20
             <br />
             <span class="text-sm font-raleway font-normal tracking-widest uppercase">Años de Exp.</span>
@@ -201,27 +202,40 @@
       <div class="max-w-4xl mx-auto px-6 text-center">
         <h2 class="font-lemon-bold text-4xl mb-4 text-black">Quiero que Cinthia nos ayude a mejorar nuestra comunicación</h2>
         <p class="text-gray-600 mb-12">Completa el formulario y nos pondremos en contacto contigo a la brevedad.</p>
-        <form @submit.prevent="enviarFormulario" class="bg-gray-50 p-10 rounded-[40px] shadow-sm flex flex-col gap-6 text-left">
+
+        <form @submit.prevent="enviarFormulario" class="bg-gray-50 p-10 rounded-[40px] shadow-sm border border-gray-100 flex flex-col gap-6 text-left">
           <div class="grid md:grid-cols-2 gap-6">
             <div>
-              <label class="block text-sm font-bold text-gray-700 mb-2 uppercase">Nombre o Empresa</label>
-              <input type="text" v-model="formData.name" required class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:border-tolko-red outline-none" />
+              <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Nombre o Empresa</label>
+              <input type="text" v-model="formData.name" required class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:outline-none focus:border-tolko-purple focus:ring-1 focus:ring-tolko-purple transition-all" />
             </div>
             <div>
-              <label class="block text-sm font-bold text-gray-700 mb-2 uppercase">Correo Electrónico</label>
-              <input type="email" v-model="formData.email" required class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:border-tolko-red outline-none" />
+              <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Correo Electrónico</label>
+              <input type="email" v-model="formData.email" required class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:outline-none focus:border-tolko-purple focus:ring-1 focus:ring-tolko-purple transition-all" />
             </div>
           </div>
 
           <div>
-            <label class="block text-sm font-bold text-gray-700 mb-2 uppercase">Cuéntanos sobre tus necesidades</label>
-            <textarea rows="5" v-model="formData.message" required class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:border-tolko-red outline-none resize-none"></textarea>
+            <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Teléfono de Contacto</label>
+            <input type="tel" v-model="formData.phone" required class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:outline-none focus:border-tolko-purple focus:ring-1 focus:ring-tolko-purple transition-all" />
+          </div>
+
+          <div>
+            <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Cuéntanos sobre tus necesidades</label>
+            <textarea
+              rows="5"
+              v-model="formData.message"
+              required
+              class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:outline-none focus:border-tolko-purple focus:ring-1 focus:ring-tolko-purple transition-all resize-none"></textarea>
           </div>
 
           <p v-if="formStatus === 'success'" class="text-green-600 font-bold text-center">¡Mensaje enviado correctamente! Nos pondremos en contacto pronto.</p>
-          <p v-if="formStatus === 'error'" class="text-red-600 font-bold text-center">Hubo un error al enviar el mensaje. Intenta nuevamente.</p>
+          <p v-if="formStatus === 'error'" class="text-red-600 font-bold text-center">Hubo un error al enviar el mensaje. Por favor, intenta nuevamente.</p>
 
-          <button type="submit" :disabled="isSubmitting" class="bg-tolko-red text-white font-bold uppercase tracking-widest py-5 rounded-xl hover:bg-black transition-colors shadow-lg shadow-tolko-red/20 mt-4 disabled:opacity-50">
+          <button
+            type="submit"
+            :disabled="isSubmitting"
+            class="bg-tolko-purple text-white font-bold uppercase tracking-widest py-5 rounded-xl hover:bg-black transition-colors shadow-lg shadow-tolko-purple/20 mt-4 disabled:opacity-50 disabled:cursor-not-allowed">
             {{ isSubmitting ? 'Enviando...' : 'Enviar Solicitud' }}
           </button>
         </form>
