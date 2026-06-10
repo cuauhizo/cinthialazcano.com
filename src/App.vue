@@ -82,7 +82,7 @@
           <a href="https://leccionesdevuelo.com/" target="_blank" class="hover:text-tolko-purple transition-colors">Lecciones de Vuelo</a>
         </div>
       </div>
-      <div class="text-center text-gray-500 text-xs mt-12 border-t border-gray-800 pt-6">&copy; {{ anio }} Cinthia Lazcano. Todos los derechos reservados.</div>
+      <div class="text-center text-gray-400 text-xs mt-12 border-t border-gray-800 pt-6">&copy; {{ anio }} Cinthia Lazcano. Todos los derechos reservados.</div>
     </footer>
   </div>
 </template>

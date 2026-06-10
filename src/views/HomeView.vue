@@ -206,23 +206,24 @@
         <form @submit.prevent="enviarFormulario" class="bg-gray-50 p-10 rounded-[40px] shadow-sm border border-gray-100 flex flex-col gap-6 text-left">
           <div class="grid md:grid-cols-2 gap-6">
             <div>
-              <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Nombre o Empresa</label>
-              <input type="text" v-model="formData.name" required class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:outline-none focus:border-tolko-purple focus:ring-1 focus:ring-tolko-purple transition-all" />
+              <label for="nombre" class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Nombre o Empresa</label>
+              <input id="nombre" type="text" v-model="formData.name" required class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:outline-none focus:border-tolko-purple focus:ring-1 focus:ring-tolko-purple transition-all" />
             </div>
             <div>
-              <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Correo Electrónico</label>
-              <input type="email" v-model="formData.email" required class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:outline-none focus:border-tolko-purple focus:ring-1 focus:ring-tolko-purple transition-all" />
+              <label for="email" class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Correo Electrónico</label>
+              <input id="email" type="email" v-model="formData.email" required class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:outline-none focus:border-tolko-purple focus:ring-1 focus:ring-tolko-purple transition-all" />
             </div>
           </div>
 
           <div>
-            <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Teléfono de Contacto</label>
-            <input type="tel" v-model="formData.phone" required class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:outline-none focus:border-tolko-purple focus:ring-1 focus:ring-tolko-purple transition-all" />
+            <label for="telefono" class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Teléfono de Contacto</label>
+            <input id="telefono" type="tel" v-model="formData.phone" required class="w-full bg-white border border-gray-200 px-6 py-4 rounded-xl focus:outline-none focus:border-tolko-purple focus:ring-1 focus:ring-tolko-purple transition-all" />
           </div>
 
           <div>
-            <label class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Cuéntanos sobre tus necesidades</label>
+            <label for="mensaje" class="block text-sm font-bold text-gray-700 mb-2 uppercase tracking-wide">Cuéntanos sobre tus necesidades</label>
             <textarea
+              id="mensaje"
               rows="5"
               v-model="formData.message"
               required
