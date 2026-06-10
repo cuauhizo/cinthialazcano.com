@@ -170,7 +170,7 @@
     <section id="sobre-mi" class="py-24 bg-black text-white">
       <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-16">
         <div class="flex-1 w-full relative">
-          <img src="/cinthialazcano.jpg" alt="Cinthia Lazcano - Conferencista y Especialista en Comunicación" class="aspect-[4/3] bg-white object-contain rounded-[40px]" />
+          <img src="/cinthialazcano.webp" alt="Cinthia Lazcano - Conferencista y Especialista en Comunicación" class="aspect-[4/3] bg-white object-contain rounded-[40px]" />
           <div class="absolute -bottom-6 -right-6 bg-tolko-purple text-white p-8 rounded-[30px] font-lemon-bold text-2xl shadow-2xl">
             +20
             <br />
