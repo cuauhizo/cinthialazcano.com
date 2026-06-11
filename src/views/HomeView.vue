@@ -219,7 +219,7 @@
             </p>
             <p>
               Es fundadora y CEO de Tolko Comunicación desde 2014, con más de una década de experiencia previa en liderar la comunicación de empresas transnacionales. Ha asesorado a decenas de compañías y ejecutivos de primer nivel.
-              <strong class="font-bold text-tolko-purple">También es locutora profesional.</strong>
+              <strong class="font-bold text-white">También es locutora profesional.</strong>
             </p>
             <p>
               Cinthia es reconocida por su estilo dinámico y práctico enfocado en convertir la comunicación en un
