@@ -92,7 +92,11 @@
             <span class="text-tolko-purple">quien comunica mejor, gana.</span>
           </h1>
           <p class="text-xl text-gray-600 mb-10 max-w-2xl leading-relaxed">
-            Conferencias y entrenamientos diseñados con un propósito claro: transformar la comunicación en un activo y consolidar conexiones profundas que aceleren el éxito de personas y empresas.
+            Conferencias y entrenamientos diseñados con un propósito claro:
+            <strong class="font-bold text-black">transformar la comunicación en un activo</strong>
+            y consolidar conexiones profundas que
+            <strong class="font-bold text-black">aceleren el éxito</strong>
+            de personas y empresas.
           </p>
           <a href="#contacto" class="inline-block bg-black text-white font-bold uppercase tracking-wider px-10 py-4 rounded-full hover:bg-tolko-purple transition-colors shadow-xl">Agendar Fecha</a>
         </div>
@@ -103,8 +107,9 @@
         <div class="mb-16">
           <h2 class="font-lemon-bold text-4xl md:text-5xl mb-4 text-black">Comunicación Ejecutiva</h2>
           <p class="text-lg text-gray-600 max-w-3xl">
-            Asesoría en comunicación de alto nivel para ejecutivos en posiciones de liderazgo, a través de sesiones especiales en las que -en un ambiente constructivo, eficiente y de confianza- se les habilita para representar exitosamente a la
-            compañía a través de sus palabras, presencia y comunicación no verbal.
+            Asesoría en comunicación de alto nivel para ejecutivos en posiciones de liderazgo, a través de sesiones especiales en las que -en un ambiente constructivo, eficiente y de confianza- se les habilita para
+            <strong class="font-bold text-black">representar exitosamente a la compañía</strong>
+            a través de sus palabras, presencia y comunicación no verbal.
           </p>
         </div>
 
@@ -113,7 +118,11 @@
             <span class="text-xs font-bold text-tolko-purple uppercase tracking-widest mb-4 block">Conferencia</span>
             <h3 class="font-lemon-bold text-2xl mb-4 group-hover:text-tolko-purple transition-colors">El Poder de la Comunicación de Alto Nivel: impacto ejecutivo</h3>
             <p class="text-gray-600 mb-4">
-              Cada vez que un líder habla, la reputación y el valor de la compañía están en juego. Esta conferencia está diseñada exclusivamente para que la alta dirección domine la arena pública con autoridad, claridad e influencia.
+              Cada vez que un líder habla, la
+              <strong class="font-bold text-black">reputación y el valor</strong>
+              de la compañía están en juego. Esta conferencia está diseñada exclusivamente para que la alta dirección domine la arena pública con
+              <strong class="font-bold text-black">autoridad, claridad e influencia</strong>
+              .
             </p>
             <div class="h-0.5 w-[90%] bg-tolko-purple absolute right-0"></div>
           </div>
@@ -122,7 +131,11 @@
             <span class="text-xs font-bold text-tolko-purple uppercase tracking-widest mb-4 block">Conferencia</span>
             <h3 class="font-lemon-bold text-2xl mb-4 group-hover:text-tolko-purple transition-colors">Comunicación en tiempos de crisis: conectar en la incertidumbre</h3>
             <p class="text-gray-600 mb-4">
-              Esta conferencia dota a los líderes de las herramientas de contención y gestión necesarias para liderar la narrativa cuando la presión es máxima. Se trata de gobernar el mensaje y transmitir comunicación firme y ética.
+              Esta conferencia dota a los líderes de las herramientas de contención y gestión necesarias para
+              <strong class="font-bold text-black">liderar la narrativa</strong>
+              cuando la presión es máxima. Se trata de
+              <strong class="font-bold text-black">gobernar el mensaje</strong>
+              gobernar el mensaje y transmitir comunicación firme y ética.
             </p>
             <div class="h-0.5 w-[90%] bg-tolko-purple absolute right-0"></div>
           </div>
@@ -130,7 +143,11 @@
           <div class="relative p-10 rounded-[30px] bg-tolko-purple text-white shadow-xl shadow-tolko-purple/20 transform md:-translate-y-4">
             <span class="text-xs font-bold text-white/80 uppercase tracking-widest mb-4 block">Taller</span>
             <h3 class="font-lemon-bold text-2xl mb-4">Entrenamiento de medios</h3>
-            <p class="text-white/90 mb-4">Preparación para que los líderes enfrenten cualquier escenario periodístico —ruedas de prensa y entrevistas— con absoluta seguridad y énfasis estratégico, controlando la narrativa.</p>
+            <p class="text-white/90 mb-4">
+              Preparación para que los líderes enfrenten cualquier escenario periodístico —ruedas de prensa y entrevistas— con
+              <strong class="font-bold text-white">absoluta seguridad y énfasis estratégico</strong>
+              , controlando la narrativa.
+            </p>
             <div class="h-0.5 w-[90%] bg-white absolute right-0 bottom-10"></div>
           </div>
         </div>
@@ -142,8 +159,9 @@
         <div class="mb-16">
           <h2 class="font-lemon-bold text-4xl md:text-5xl mb-4 text-black">Comunicación Personal</h2>
           <p class="text-lg text-gray-600 max-w-3xl">
-            La comunicación personal es mucho más que una habilidad blanda; es el tejido conector que transforma los objetivos de una organización en realidades tangibles, porque las empresas hacen negocios con seres humanos, y quien comunica mejor a
-            nivel personal, gana.
+            La comunicación personal es mucho más que una habilidad blanda; es el
+            <strong class="font-bold text-tolko-purple">tejido conector que transforma los objetivos de una empresa en realidades tangibles</strong>
+            , porque las empresas hacen negocios con seres humanos, y quien comunica mejor a nivel personal, gana.
           </p>
         </div>
 
@@ -159,13 +177,21 @@
           <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition-shadow border-l-4 border-black">
             <span class="text-xs font-bold text-tolko-purple uppercase tracking-widest mb-4 block">Conferencia</span>
             <h3 class="font-lemon-bold text-xl mb-4">Sé memorable: comunica para trascender</h3>
-            <p class="text-gray-600 mb-4">En la era de la saturación de mensajes, esta conferencia impulsa la comunicación transformadora, fusionando estrategia de negocios, storytelling y propósito, convirtiéndola en un activo estratégico.</p>
+            <p class="text-gray-600 mb-4">
+              En la era de la saturación de mensajes, esta conferencia impulsa la
+              <strong class="font-bold text-black">comunicación transformadora</strong>
+              , fusionando estrategia de negocios, storytelling y propósito, convirtiéndola en un activo estratégico.
+            </p>
           </div>
 
           <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition-shadow border-l-4 border-gray-400">
             <span class="text-xs font-bold text-tolko-purple uppercase tracking-widest mb-4 block">Conferencia</span>
             <h3 class="font-lemon-bold text-xl mb-4">Comunica con empatía: conecta con la mente del otro</h3>
-            <p class="text-gray-600 mb-4">La comunicación empática es un gran diferenciador en los negocios.Esta conferencia habilita a las personas a convertir interacciones en conexiones, escuchando para comprender y construir confianza.</p>
+            <p class="text-gray-600 mb-4">
+              La comunicación empática es un
+              <strong class="font-bold text-black">gran diferenciador en los negocios</strong>
+              . Esta conferencia habilita a las personas a convertir interacciones en conexiones, escuchando para comprender y construir confianza.
+            </p>
           </div>
         </div>
       </div>
@@ -186,16 +212,19 @@
           <h2 class="font-lemon-bold text-5xl mb-8">Cinthia Lazcano</h2>
           <div class="space-y-6 text-gray-300 text-lg">
             <p>
-              Especialista en comunicación estratégica, personal y empresarial, con más de 20 años de en el desarrollo de competencias de comunicación. Cinthia ha transformado la manera en que líderes, empresas, comités directivos y equipos articulan
-              sus mensajes, tanto en el día a día como en entornos de alta presión.
+              <strong class="font-bold text-white">Especialista en comunicación estratégica, personal y empresarial</strong>
+              , con más de 20 años de en el desarrollo de competencias de comunicación. Cinthia ha transformado la manera en que líderes, empresas, comités directivos y equipos articulan sus mensajes, tanto en el día a día como en
+              <strong class="font-bold text-white">entornos de alta presión</strong>
+              .
             </p>
             <p>
-              Es fundadora y CEO de Tolko Comunicación desde 2014, con más de una década de experiencia previa en liderar la comunicación de empresas transnacionales. Ha asesorado a decenas de compañías y ejecutivos de primer nivel. También es
-              locutora profesional.
+              Es fundadora y CEO de Tolko Comunicación desde 2014, con más de una década de experiencia previa en liderar la comunicación de empresas transnacionales. Ha asesorado a decenas de compañías y ejecutivos de primer nivel.
+              <strong class="font-bold text-tolko-purple">También es locutora profesional.</strong>
             </p>
             <p>
-              Cinthia es reconocida por su estilo dinámico y práctico enfocado en convertir la comunicación en un activo rentable, capaz de unificar culturas corporativas, cerrar acuerdos de alto valor, y consolidar liderazgos y relaciones
-              memorables, integrando elementos de neurocomunicación y storytelling.
+              Cinthia es reconocida por su estilo dinámico y práctico enfocado en convertir la comunicación en un
+              <strong class="font-bold text-white">activo rentable</strong>
+              , capaz de unificar culturas corporativas, cerrar acuerdos de alto valor, y consolidar liderazgos y relaciones memorables, integrando elementos de neurocomunicación y storytelling.
             </p>
           </div>
         </div>
