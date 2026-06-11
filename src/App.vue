@@ -1,5 +1,6 @@
 <script setup>
   import { ref, onMounted, onUnmounted } from 'vue';
+  // import Responsive from '@/components/responsive.vue';
 
   const anio = ref(new Date().getFullYear());
   const showScrollTopButton = ref(false);
@@ -88,4 +89,5 @@
       <div class="text-center text-gray-400 text-xs mt-12 border-t border-gray-800 pt-6">&copy; {{ anio }} Cinthia Lazcano. Todos los derechos reservados.</div>
     </footer>
   </div>
+  <!-- <Responsive /> -->
 </template>

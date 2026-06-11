@@ -124,7 +124,7 @@
               <strong class="font-bold text-black">autoridad, claridad e influencia</strong>
               .
             </p>
-            <div class="h-0.5 w-[90%] bg-tolko-purple absolute right-0"></div>
+            <div class="h-0.5 w-[90%] bg-tolko-purple absolute right-0 bottom-10"></div>
           </div>
 
           <div class="relative p-10 rounded-[30px] bg-gray-50 border border-gray-100 hover:shadow-2xl hover:border-tolko-purple/30 transition-all group">
@@ -137,7 +137,7 @@
               <strong class="font-bold text-black">gobernar el mensaje</strong>
               gobernar el mensaje y transmitir comunicación firme y ética.
             </p>
-            <div class="h-0.5 w-[90%] bg-tolko-purple absolute right-0"></div>
+            <div class="h-0.5 w-[90%] bg-tolko-purple absolute right-0 bottom-10"></div>
           </div>
 
           <div class="relative p-10 rounded-[30px] bg-tolko-purple text-white shadow-xl shadow-tolko-purple/20 transform md:-translate-y-4">
@@ -174,7 +174,7 @@
             </p>
           </div>
 
-          <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition-shadow border-l-4 border-black">
+          <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition-shadow border-l-4 border-tolko-purple2">
             <span class="text-xs font-bold text-tolko-purple uppercase tracking-widest mb-4 block">Conferencia</span>
             <h3 class="font-lemon-bold text-xl mb-4">Sé memorable: comunica para trascender</h3>
             <p class="text-gray-600 mb-4">
@@ -184,7 +184,7 @@
             </p>
           </div>
 
-          <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition-shadow border-l-4 border-gray-400">
+          <div class="p-8 bg-white rounded-2xl shadow-sm hover:shadow-xl transition-shadow border-l-4 border-tolko-purple3">
             <span class="text-xs font-bold text-tolko-purple uppercase tracking-widest mb-4 block">Conferencia</span>
             <h3 class="font-lemon-bold text-xl mb-4">Comunica con empatía: conecta con la mente del otro</h3>
             <p class="text-gray-600 mb-4">
@@ -201,7 +201,7 @@
       <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-16">
         <div class="flex-1 w-full relative">
           <img src="/cinthialazcano.webp" alt="Cinthia Lazcano - Conferencista y Especialista en Comunicación" class="aspect-[4/3] bg-white object-contain rounded-[40px]" />
-          <div class="absolute -bottom-6 -right-6 bg-tolko-purple text-white p-8 rounded-[30px] font-lemon-bold text-2xl shadow-2xl">
+          <div class="absolute -bottom-6 -right-6 bg-tolko-purple text-white p-8 rounded-[30px] font-lemon-bold text-4xl shadow-2xl">
             +20
             <br />
             <span class="text-sm font-raleway font-normal tracking-widest uppercase">Años de Exp.</span>
