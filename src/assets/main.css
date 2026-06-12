@@ -100,12 +100,14 @@ body {
   text-shadow: 0px 0px 16px rgba(255, 255, 255, 0.32);
 }
 
+/* max-sm */
 @media (min-width:640px) {
     /* body{
       background: red!important;
     } */
   }
 
+  /* max-md */
   @media (min-width:768px) {
     /* body{
       background: blue!important;
@@ -117,18 +119,21 @@ body {
     }
   }
 
+  /* max-lg */
   @media (min-width:1024px) {
     /* body{
       background: green!important;
     } */
   }
 
+  /* max-xl */
   @media (min-width:1280px) {
     /* body{
       background: purple!important;
     } */
   }
 
+  /* max-2xl */
   @media (min-width:1536px) {
     /* body{
       background: yellow!important;
