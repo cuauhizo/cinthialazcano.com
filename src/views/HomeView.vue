@@ -1,9 +1,9 @@
 <script setup>
-  import { ref } from 'vue';
-  import { useHead } from '@vueuse/head';
-  import { useGtm } from '@gtm-support/vue-gtm';
+  import { ref } from 'vue'
+  import { useHead } from '@vueuse/head'
+  import { useGtm } from '@gtm-support/vue-gtm'
 
-  const gtm = useGtm();
+  const gtm = useGtm()
 
   // SEO Actualizado para Cinthia
   useHead({
@@ -15,7 +15,7 @@
       { property: 'og:description', content: 'Transforma la comunicación en un activo y consolida conexiones humanas profundas que aceleren el éxito.' },
       { property: 'og:type', content: 'website' },
     ],
-  });
+  })
 
   // Variables reactivas para el formulario
   const formData = ref({
@@ -23,14 +23,14 @@
     email: '',
     phone: '',
     message: '',
-  });
+  })
 
-  const isSubmitting = ref(false);
-  const formStatus = ref(''); // Para mostrar mensaje de éxito o error
+  const isSubmitting = ref(false)
+  const formStatus = ref('') // Para mostrar mensaje de éxito o error
 
   const enviarFormulario = async () => {
-    isSubmitting.value = true;
-    formStatus.value = '';
+    isSubmitting.value = true
+    formStatus.value = ''
 
     try {
       const response = await fetch('https://api.web3forms.com/submit', {
@@ -48,12 +48,12 @@
           message: formData.value.message,
           subject: 'Nueva solicitud de conferencia desde la Web',
         }),
-      });
+      })
 
-      const result = await response.json();
+      const result = await response.json()
 
       if (result.success) {
-        formStatus.value = 'success';
+        formStatus.value = 'success'
 
         if (gtm) {
           gtm.trackEvent({
@@ -61,24 +61,24 @@
             category: 'Lead',
             action: 'Formulario de Contacto Exitoso',
             label: formData.value.name,
-          });
+          })
         }
 
         // Limpiar formulario tras éxito
-        formData.value = { name: '', email: '', phone: '', message: '' };
+        formData.value = { name: '', email: '', phone: '', message: '' }
       } else {
-        formStatus.value = 'error';
+        formStatus.value = 'error'
       }
     } catch (error) {
-      console.error('Error enviando el formulario:', error);
-      formStatus.value = 'error';
+      console.error('Error enviando el formulario:', error)
+      formStatus.value = 'error'
     } finally {
-      isSubmitting.value = false;
+      isSubmitting.value = false
       setTimeout(() => {
-        formStatus.value = '';
-      }, 5000); // 5000 milisegundos = 5 segundos
+        formStatus.value = ''
+      }, 5000) // 5000 milisegundos = 5 segundos
     }
-  };
+  }
 </script>
 
 <template>
@@ -121,8 +121,7 @@
               Cada vez que un líder habla, la
               <strong class="font-bold text-black">reputación y el valor</strong>
               de la compañía están en juego. Esta conferencia está diseñada exclusivamente para que la alta dirección domine la arena pública con
-              <strong class="font-bold text-black">autoridad, claridad e influencia</strong>
-              .
+              <strong class="font-bold text-black">autoridad, claridad e influencia</strong>.
             </p>
             <div class="h-0.5 w-[90%] bg-tolko-purple absolute right-0 bottom-10"></div>
           </div>
@@ -135,7 +134,7 @@
               <strong class="font-bold text-black">liderar la narrativa</strong>
               cuando la presión es máxima. Se trata de
               <strong class="font-bold text-black">gobernar el mensaje</strong>
-              gobernar el mensaje y transmitir comunicación firme y ética.
+              y transmitir comunicación firme y ética.
             </p>
             <div class="h-0.5 w-[90%] bg-tolko-purple absolute right-0 bottom-10"></div>
           </div>
@@ -145,8 +144,7 @@
             <h3 class="font-lemon-bold text-2xl mb-4">Entrenamiento de medios</h3>
             <p class="text-white/90 mb-4">
               Preparación para que los líderes enfrenten cualquier escenario periodístico —ruedas de prensa y entrevistas— con
-              <strong class="font-bold text-white">absoluta seguridad y énfasis estratégico</strong>
-              , controlando la narrativa.
+              <strong class="font-bold text-white">absoluta seguridad y énfasis estratégico</strong>, controlando la narrativa.
             </p>
             <div class="h-0.5 w-[90%] bg-white absolute right-0 bottom-10"></div>
           </div>
@@ -160,8 +158,7 @@
           <h2 class="font-lemon-bold text-4xl md:text-5xl mb-4 text-black">Comunicación Personal</h2>
           <p class="text-lg text-gray-600 max-w-3xl">
             La comunicación personal es mucho más que una habilidad blanda; es el
-            <strong class="font-bold text-tolko-purple">tejido conector que transforma los objetivos de una empresa en realidades tangibles</strong>
-            , porque las empresas hacen negocios con seres humanos, y quien comunica mejor a nivel personal, gana.
+            <strong class="font-bold text-tolko-purple">tejido conector que transforma los objetivos de una empresa en realidades tangibles</strong>, porque las empresas hacen negocios con seres humanos, y quien comunica mejor a nivel personal, gana.
           </p>
         </div>
 
@@ -179,8 +176,7 @@
             <h3 class="font-lemon-bold text-xl mb-4">Sé memorable: comunica para trascender</h3>
             <p class="text-gray-600 mb-4">
               En la era de la saturación de mensajes, esta conferencia impulsa la
-              <strong class="font-bold text-black">comunicación transformadora</strong>
-              , fusionando estrategia de negocios, storytelling y propósito, convirtiéndola en un activo estratégico.
+              <strong class="font-bold text-black">comunicación transformadora</strong>, fusionando estrategia de negocios, storytelling y propósito, convirtiéndola en un activo estratégico.
             </p>
           </div>
 
@@ -189,8 +185,7 @@
             <h3 class="font-lemon-bold text-xl mb-4">Comunica con empatía: conecta con la mente del otro</h3>
             <p class="text-gray-600 mb-4">
               La comunicación empática es un
-              <strong class="font-bold text-black">gran diferenciador en los negocios</strong>
-              . Esta conferencia habilita a las personas a convertir interacciones en conexiones, escuchando para comprender y construir confianza.
+              <strong class="font-bold text-black">gran diferenciador en los negocios</strong>. Esta conferencia habilita a las personas a convertir interacciones en conexiones, escuchando para comprender y construir confianza.
             </p>
           </div>
         </div>
@@ -212,8 +207,7 @@
           <h2 class="font-lemon-bold text-5xl mb-8">Cinthia Lazcano</h2>
           <div class="space-y-6 text-gray-300 text-lg">
             <p>
-              <strong class="font-bold text-white">Especialista en comunicación estratégica, personal y empresarial</strong>
-              , con más de 20 años de en el desarrollo de competencias de comunicación. Cinthia ha transformado la manera en que líderes, empresas, comités directivos y equipos articulan sus mensajes, tanto en el día a día como en
+              <strong class="font-bold text-white">Especialista en comunicación estratégica, personal y empresarial</strong>, con más de 20 años de en el desarrollo de competencias de comunicación. Cinthia ha transformado la manera en que líderes, empresas, comités directivos y equipos articulan sus mensajes, tanto en el día a día como en
               <strong class="font-bold text-white">entornos de alta presión</strong>
               .
             </p>
@@ -223,8 +217,7 @@
             </p>
             <p>
               Cinthia es reconocida por su estilo dinámico y práctico enfocado en convertir la comunicación en un
-              <strong class="font-bold text-white">activo rentable</strong>
-              , capaz de unificar culturas corporativas, cerrar acuerdos de alto valor, y consolidar liderazgos y relaciones memorables, integrando elementos de neurocomunicación y storytelling.
+              <strong class="font-bold text-white">activo rentable</strong>, capaz de unificar culturas corporativas, cerrar acuerdos de alto valor, y consolidar liderazgos y relaciones memorables, integrando elementos de neurocomunicación y storytelling.
             </p>
           </div>
         </div>
