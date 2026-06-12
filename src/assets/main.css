@@ -31,6 +31,10 @@
   .titulo {
     @apply font-lemon-normal text-3xl md:text-[3.196rem] md:leading-[3.595rem] pt-4 mb-4;
   }
+
+
+  
+
 }
 
 @font-face {
@@ -74,8 +78,8 @@ body {
   /* background-image: url(img/bg-hero.png); */
   background-image: url(img/bg-hero-alt.png);
   background-repeat: no-repeat;
-  background-size: 80%;
-  background-position: 180% center;
+  background-size: 200%;
+  background-position: -10% center;
 }
 
 .texto-con-bordes,
@@ -95,3 +99,38 @@ body {
   @apply leading-[normal];
   text-shadow: 0px 0px 16px rgba(255, 255, 255, 0.32);
 }
+
+@media (min-width:640px) {
+    /* body{
+      background: red!important;
+    } */
+  }
+
+  @media (min-width:768px) {
+    /* body{
+      background: blue!important;
+    } */
+
+    .bg-hero {
+      background-size: 80%;
+      background-position: 300% center;
+    }
+  }
+
+  @media (min-width:1024px) {
+    /* body{
+      background: green!important;
+    } */
+  }
+
+  @media (min-width:1280px) {
+    /* body{
+      background: purple!important;
+    } */
+  }
+
+  @media (min-width:1536px) {
+    /* body{
+      background: yellow!important;
+    } */
+  }

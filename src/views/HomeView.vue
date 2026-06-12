@@ -88,7 +88,7 @@
         <div class="flex-1">
           <h1 class="font-lemon-bold text-5xl md:text-6xl lg:text-7xl leading-[1.1] mb-8 text-black">
             En el mundo de los negocios y en la vida en general,
-            <br />
+            <br class="hidden xl:block" />
             <span class="text-tolko-purple">quien comunica mejor, gana.</span>
           </h1>
           <p class="text-xl text-gray-600 mb-10 max-w-2xl leading-relaxed">
