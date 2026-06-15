@@ -6,15 +6,32 @@
   const gtm = useGtm()
 
   // SEO Actualizado para Cinthia
+  // SEO Pro para Cinthia (Compatible con todas las redes)
   useHead({
     title: 'Cinthia Lazcano | Especialista en Comunicación Estratégica',
     meta: [
       { name: 'description', content: 'En el mundo de los negocios y en la vida en general, quien comunica mejor, gana. Conferencias y entrenamientos de alto nivel por Cinthia Lazcano.' },
       { name: 'keywords', content: 'comunicación ejecutiva, media training, storytelling, neurocomunicación, Cinthia Lazcano, Tolko Comunicación, Tolko Group' },
-      { property: 'og:title', content: 'Cinthia Lazcano | Conferencista' },
-      { property: 'og:image', content: 'https://cinthialazcano.com/thumbnail.png' },
+
+      // --- FACEBOOK, LINKEDIN, WHATSAPP (Open Graph) ---
+      { property: 'og:title', content: 'Cinthia Lazcano | Especialista en Comunicación Estratégica' },
       { property: 'og:description', content: 'Transforma la comunicación en un activo y consolida conexiones humanas profundas que aceleren el éxito.' },
       { property: 'og:type', content: 'website' },
+      { property: 'og:url', content: 'https://cinthialazcano.com/' },
+      { property: 'og:image', content: 'https://cinthialazcano.com/thumbnail.png' },
+      { property: 'og:image:secure_url', content: 'https://cinthialazcano.com/thumbnail.png' },
+      { property: 'og:image:type', content: 'image/png' },
+      // Definir las dimensiones le dice a las redes el tamaño exacto antes de descargarla (Evita el lag en WhatsApp)
+      { property: 'og:image:width', content: '1200' },
+      { property: 'og:image:height', content: '630' },
+      { property: 'og:image:alt', content: 'Cinthia Lazcano - Conferencias de Alto Nivel' },
+
+      // --- TWITTER / X CARDS ---
+      // 'summary_large_image' fuerza a X a mostrar tu thumbnail como un banner masivo arriba del texto
+      { name: 'twitter:card', content: 'summary_large_image' },
+      { name: 'twitter:title', content: 'Cinthia Lazcano | Especialista en Comunicación Estratégica' },
+      { name: 'twitter:description', content: 'En el mundo de los negocios y en la vida en general, quien comunica mejor, gana.' },
+      { name: 'twitter:image', content: 'https://cinthialazcano.com/thumbnail.png' },
     ],
   })
 
