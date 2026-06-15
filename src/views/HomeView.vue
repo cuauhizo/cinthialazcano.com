@@ -12,7 +12,7 @@
       { name: 'description', content: 'En el mundo de los negocios y en la vida en general, quien comunica mejor, gana. Conferencias y entrenamientos de alto nivel por Cinthia Lazcano.' },
       { name: 'keywords', content: 'comunicación ejecutiva, media training, storytelling, neurocomunicación, Cinthia Lazcano, Tolko Comunicación, Tolko Group' },
       { property: 'og:title', content: 'Cinthia Lazcano | Conferencista' },
-      { property: 'og:image', content: 'https://cinthialazcano.com/cinthialazcano.webp' },
+      { property: 'og:image', content: 'https://cinthialazcano.com/thumbnail.png' },
       { property: 'og:description', content: 'Transforma la comunicación en un activo y consolida conexiones humanas profundas que aceleren el éxito.' },
       { property: 'og:type', content: 'website' },
     ],
